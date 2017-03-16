@@ -1,17 +1,24 @@
 // modules =================================================
 var express = require('express')     // framework d'appli
-var app = express()
+var app = module.exports = express()
 var bodyParser = require('body-parser') // BodyParser pour POST
 var http = require('http').Server(app)      // préparer le serveur web
 var dotenv = require('dotenv')
 var path = require('path')
+
+var cfenv = require('cfenv') // Cloud Foundry Environment Variables
+var appEnv = cfenv.getAppEnv() // Grab environment variables
 
 // configuration ===========================================
 
 // load environment variables,
 // either from .env files (development),
 // heroku environment in production, etc...
-dotenv.load()
+
+// dotenv.load()
+// dotenv.config({path: './.env-fasionhaus-test'})
+dotenv.config({path: './.env-fasionhaus'})
+
 
 app.use(express.static(path.join(__dirname, '/public')))
 
