@@ -1,0 +1,8 @@
+applications:
+- name: GameOfDisruption
+  host: GameOfDisruption
+  memory: 512M
+  services:
+  - visual-recognition
+  env:
+    NODE_ENV: cloud-foundry

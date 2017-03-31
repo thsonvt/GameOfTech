@@ -15,9 +15,8 @@ var appEnv = cfenv.getAppEnv() // Grab environment variables
 // either from .env files (development),
 // heroku environment in production, etc...
 
-// dotenv.load()
-// dotenv.config({path: './.env-fasionhaus-test'})
-dotenv.config({path: './.env-fasionhaus'})
+dotenv.load()
+// dotenv.config({path: './.env-fasionhaus'})
 
 
 app.use(express.static(path.join(__dirname, '/public')))

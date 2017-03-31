@@ -47,14 +47,34 @@ module.exports = function (controller) {
     'call_to_actions': [
       {
         'type': 'postback',
-        'title': 'Item 1',
-        'payload': 'Item 1'
+        'title': 'Practical stories on tech',
+        'payload': 'I want practical stories around how others are using technology?'
       },
       {
         'type': 'postback',
-        'title': 'Item 2',
-        'payload': 'Item 2'
-      }
+        'title': 'Browse headlines',
+        'payload': 'I just want to browse headlines and get inspired by what is happening out there across Technology and across Industry'
+      },
+      {
+        'type': 'postback',
+        'title': 'Learn a given technology',
+        'payload': 'I want to learn about a given technology - 101 sort of thing'
+      },
+      {
+        'type': 'postback',
+        'title': 'What happening in my industry',
+        'payload': 'I want to get a feel of what is happening in my industry...'
+      },
+      {
+        'type': 'postback',
+        'title': 'Get started with technology',
+        'payload': 'I want you to learn how to make it happen - how do I get started with technology?'
+      },
+      // {
+      //   'type': 'postback',
+      //   'title': 'How to get more innovative',
+      //   'payload': 'I want to help my company become more innovative and agile'
+      // }
     ]
   }
 
@@ -71,7 +91,8 @@ module.exports = function (controller) {
   var form3 = {
     'setting_type': 'greeting',
     'greeting': {
-      'text': 'Your greetings message'
+      // 'text': '"Welcome to the Gameof.Tech! I am your tech-bot and I am here to look after you! Can you help me get a sense of what you are looking for?'
+      'text': '"Welcome to the Gameof.Tech!'
     }
   }
 
